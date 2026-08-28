@@ -88,7 +88,7 @@ function renderMonth() {
         <div class="card-date">${formatDate(item.date)}</div>
         <div class="card-title">${item.title}</div>
       </div>
-      ${(!GALLERY_ONLY && item.status === 'sold') ? '<div class="sold-ribbon">おむかえ済み</div>' : ''}
+      ${item.status === 'sold' ? '<div class="sold-ribbon">おむかえ済み</div>' : ''}
     `;
 
     card.addEventListener('click', () => openModal(item));
@@ -132,15 +132,21 @@ function openModal(item) {
   const priceEl = document.getElementById('modal-price');
   const sizeEl = document.querySelector('.modal-size');
 
-  // ギャラリーだけの公開モードなら、値段・申し込み・購入まわりを全部隠す
+  // ギャラリーだけの公開モードなら、値段・申し込み・購入まわりは隠す
+  // (ただし「おむかえ済み」の表示だけは、売れているものにそのまま出す)
   if (GALLERY_ONLY) {
     priceEl.classList.add('hidden');
     if (sizeEl) sizeEl.classList.add('hidden');
     form.classList.add('hidden');
-    soldMsg.classList.add('hidden');
-    soldBadge.classList.add('hidden');
     baseLink.classList.add('hidden');
     orDivider.classList.add('hidden');
+    if (item.status === 'sold') {
+      soldMsg.classList.remove('hidden');
+      soldBadge.classList.remove('hidden');
+    } else {
+      soldMsg.classList.add('hidden');
+      soldBadge.classList.add('hidden');
+    }
     document.getElementById('modal-overlay').classList.remove('hidden');
     return;
   }
