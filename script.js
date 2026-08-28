@@ -28,6 +28,8 @@ function applyGalleryOnlyMode() {
   if (!GALLERY_ONLY) return;
   const priceNote = document.querySelector('.price-note');
   if (priceNote) priceNote.classList.add('hidden');
+  const subtitle = document.getElementById('subtitle');
+  if (subtitle) subtitle.innerHTML = '毎日一枚、手描きの原画を。<br>ここでは、見るだけの展示をしています🐹';
   document.body.classList.add('gallery-only');
 }
 
