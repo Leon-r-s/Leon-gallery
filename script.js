@@ -88,7 +88,7 @@ function renderMonth() {
         <div class="card-date">${formatDate(item.date)}</div>
         <div class="card-title">${item.title}</div>
       </div>
-      ${(!GALLERY_ONLY && item.status === 'sold') ? '<div class="sold-ribbon">SoldOut</div>' : ''}
+      ${(!GALLERY_ONLY && item.status === 'sold') ? '<div class="sold-ribbon">おむかえ済み</div>' : ''}
     `;
 
     card.addEventListener('click', () => openModal(item));

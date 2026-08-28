@@ -154,15 +154,15 @@ main {
 
 .sold-ribbon {
   position: absolute;
-  top: 10px;
-  right: -30px;
+  top: 12px;
+  right: -34px;
   background: #c98a6b;
   color: #fff;
-  font-size: 0.7rem;
-  padding: 4px 34px;
+  font-size: 0.65rem;
+  padding: 3px 32px;
   transform: rotate(35deg);
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
 .site-footer {
