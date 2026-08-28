@@ -29,7 +29,7 @@ function applyGalleryOnlyMode() {
   const priceNote = document.querySelector('.price-note');
   if (priceNote) priceNote.classList.add('hidden');
   const subtitle = document.getElementById('subtitle');
-  if (subtitle) subtitle.innerHTML = '毎日一枚、手描きの原画を。<br>ここでは、見るだけの展示をしています🐹';
+  if (subtitle) subtitle.innerHTML = '毎日一枚、手描きの原画を。<br>もうすこしでお迎えできるようになります🐹';
   document.body.classList.add('gallery-only');
 }
 
