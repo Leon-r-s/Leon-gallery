@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>れおんの原画ギャラリー</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>れおんの原画ギャラリー</h1>
+  <p class="subtitle">毎日一枚、手描きの原画を。<br>気になった一枚を、お迎えしてみてください✨</p>
+  <p class="price-note">原画は、1枚 ¥2,000 です<br>サイズは、はがきサイズくらい(約10.7×14.5cm)</p>
+</header>
+
+<main>
+  <div class="month-nav">
+    <button id="prev-month" class="month-nav-btn">&larr; 前の月</button>
+    <div id="current-month" class="current-month"></div>
+    <button id="next-month" class="month-nav-btn">次の月 &rarr;</button>
+  </div>
+  <div id="calendar-grid" class="calendar-grid">
+    <!-- JSで生成 -->
+  </div>
+  <p id="empty-msg" class="empty-msg hidden">この月には、まだ絵がありません。</p>
+  <div class="month-nav month-nav-bottom">
+    <button id="prev-month-bottom" class="month-nav-btn">&larr; 前の月</button>
+    <div id="current-month-bottom" class="current-month"></div>
+    <button id="next-month-bottom" class="month-nav-btn">次の月 &rarr;</button>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; れおん｜手描きとAI音楽の研究室</p>
+</footer>
+
+<!-- 詳細モーダル -->
+<div id="modal-overlay" class="modal-overlay hidden">
+  <div class="modal-box">
+    <button id="modal-close" class="modal-close">&times;</button>
+    <div class="modal-image-wrap">
+      <img id="modal-image" src="" alt="">
+      <div id="modal-soldout" class="soldout-badge hidden">SoldOut</div>
+    </div>
+    <h2 id="modal-title"></h2>
+    <p id="modal-date" class="modal-date"></p>
+    <p id="modal-note" class="modal-note"></p>
+    <p id="modal-price" class="modal-price"></p>
+    <p class="modal-size">サイズ: はがきサイズくらい(約10.7×14.5cm)</p>
+
+    <a id="modal-base-link" href="#" target="_blank" rel="noopener" class="apply-button base-buy-button hidden">BASEで購入する</a>
+    <p class="or-divider hidden" id="or-divider">または</p>
+
+    <form id="apply-form" class="apply-form">
+      <input type="hidden" id="form-artwork" name="artwork" value="">
+
+      <label class="form-label" for="form-name">お名前(ニックネームでOK)</label>
+      <input type="text" id="form-name" name="name" class="form-input" required>
+
+      <label class="form-label" for="form-method">ご希望の連絡手段</label>
+      <select id="form-method" name="method" class="form-input" required>
+        <option value="">選んでください</option>
+        <option value="X(Twitter)DM">X(Twitter)のDM</option>
+        <option value="InstagramDM">InstagramのDM</option>
+        <option value="Discord">Discord</option>
+        <option value="メール">メール</option>
+      </select>
+
+      <label class="form-label" for="form-account">そのアカウント名・連絡先</label>
+      <input type="text" id="form-account" name="account" class="form-input" placeholder="例: @your_id" required>
+
+      <button type="submit" class="apply-button">この一枚を申し込む</button>
+    </form>
+    <p id="form-status" class="form-status hidden"></p>
+
+    <p id="modal-sold-msg" class="sold-msg hidden">この作品は、すでにおうちが決まりました。</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
