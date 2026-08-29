@@ -172,6 +172,24 @@ main {
   color: #a98f7c;
 }
 
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #a97c5c;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-sep {
+  color: #d9c3ac;
+  margin: 0 4px;
+}
+
 /* モーダル */
 .modal-overlay {
   position: fixed;
@@ -372,6 +390,7 @@ main {
     color: #ecdfd0;
   }
   .site-header h1 { color: #e0b48c; }
+  .footer-links a { color: #e0b48c; }
   .subtitle { color: #cbb8a3; }
   .price-note { background: #34291f; border-color: #4a3b2c; color: #e0b48c; }
   .modal-size { color: #b8a28c; }
