@@ -174,11 +174,13 @@ main {
 
 .footer-links {
   margin-bottom: 8px;
+  font-size: 0.95rem;
 }
 
 .footer-links a {
   color: #a97c5c;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .footer-links a:hover {
