@@ -18,7 +18,7 @@ body {
 
 .site-header {
   text-align: center;
-  padding: 48px 20px 24px;
+  padding: 24px 20px 24px;
 }
 
 .site-header h1 {
@@ -26,6 +26,18 @@ body {
   font-size: 2rem;
   color: #a97c5c;
   margin: 0 0 12px;
+}
+
+.site-header h1.header-image {
+  margin: 0 auto 16px;
+  max-width: 1000px;
+}
+
+.site-header h1.header-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
 }
 
 .subtitle {
