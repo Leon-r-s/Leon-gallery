@@ -3,7 +3,7 @@ const FORM_ENDPOINT = "https://formspree.io/f/xljrddqb";
 // trueにすると、値段・申し込み・購入まわりを全部隠して、
 // 「見るだけのギャラリー」として公開できます。
 // 販売の準備ができたら false に戻してください。
-const GALLERY_ONLY = true;
+const GALLERY_ONLY = false;
 
 let ALL_ITEMS = [];
 let CURRENT_YM = null; // "2026-08" の形式
