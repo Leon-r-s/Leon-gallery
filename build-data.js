@@ -12,11 +12,13 @@ const DATE_TITLE_RE = /^(\d{4}-\d{2}-\d{2})_(.+)\.(jpg|jpeg|png|webp)$/i;
 
 // 既存の data.json があれば、SoldOut などの状態を引き継ぐために読み込む
 let existingStatus = {};
+let existingItems = {}; // 前回の情報（BASEリンク・値段・メモ）を引き継ぐ
 if (fs.existsSync(dataPath)) {
   try {
     const existing = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
     existing.items.forEach(item => {
       existingStatus[item.date] = item.status;
+      existingItems[item.date] = item;
     });
   } catch (e) {
     console.log('既存のdata.jsonが読めなかったので、新規に作ります。');
@@ -38,9 +40,10 @@ files.forEach(file => {
     date,
     title,
     image: file,
-    price: 2000,
+    price: existingItems[date]?.price || 2000,
     status: existingStatus[date] || 'available',
-    note: ''
+    note: existingItems[date]?.note || '',
+    ...(existingItems[date]?.base_url ? { base_url: existingItems[date].base_url } : {})
   });
 });
 
