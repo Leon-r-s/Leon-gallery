@@ -125,12 +125,9 @@ function openModal(item) {
   document.getElementById('modal-note').textContent = item.note || '';
   document.getElementById('modal-price').textContent = `¥${item.price.toLocaleString()}`;
 
-  const form = document.getElementById('apply-form');
   const soldMsg = document.getElementById('modal-sold-msg');
   const soldBadge = document.getElementById('modal-soldout');
-  const formStatus = document.getElementById('form-status');
   const baseLink = document.getElementById('modal-base-link');
-  const orDivider = document.getElementById('or-divider');
   const priceEl = document.getElementById('modal-price');
   const sizeEl = document.querySelector('.modal-size');
 
@@ -139,9 +136,7 @@ function openModal(item) {
   if (GALLERY_ONLY) {
     priceEl.classList.add('hidden');
     if (sizeEl) sizeEl.classList.add('hidden');
-    form.classList.add('hidden');
     baseLink.classList.add('hidden');
-    orDivider.classList.add('hidden');
     if (item.status === 'sold') {
       soldMsg.classList.remove('hidden');
       soldBadge.classList.remove('hidden');
@@ -156,28 +151,19 @@ function openModal(item) {
   priceEl.classList.remove('hidden');
   if (sizeEl) sizeEl.classList.remove('hidden');
 
-  // フォームをリセットして、今回の作品情報をセット
-  form.reset();
-  formStatus.classList.add('hidden');
-  formStatus.textContent = '';
-  document.getElementById('form-artwork').value = `${item.title}(${item.date})`;
 
   // BASEに登録済みの作品なら、購入ボタンを出す
   if (item.base_url && item.status !== 'sold') {
     baseLink.href = item.base_url;
     baseLink.classList.remove('hidden');
-    orDivider.classList.remove('hidden');
   } else {
     baseLink.classList.add('hidden');
-    orDivider.classList.add('hidden');
   }
 
   if (item.status === 'sold') {
-    form.classList.add('hidden');
     soldMsg.classList.remove('hidden');
     soldBadge.classList.remove('hidden');
   } else {
-    form.classList.remove('hidden');
     soldMsg.classList.add('hidden');
     soldBadge.classList.add('hidden');
   }
@@ -216,7 +202,7 @@ function setupForm() {
       if (res.ok) {
         form.reset();
         form.classList.add('hidden');
-        status.textContent = '申し込み、受け取りました。ご連絡をお待ちくださいね🐹';
+        status.textContent = 'お問い合わせ、受け取りました。ご連絡をお待ちくださいね🐹';
         status.classList.remove('hidden');
       } else {
         status.textContent = '送信できませんでした。時間をおいて、もう一度試してみてください。';

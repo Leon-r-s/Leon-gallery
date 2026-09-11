@@ -177,6 +177,30 @@ main {
   white-space: nowrap;
 }
 
+.contact-section {
+  max-width: 520px;
+  margin: 48px auto 8px;
+  padding: 24px 22px;
+  background: #fdf6ee;
+  border: 1px solid #e8d5bf;
+  border-radius: 18px;
+}
+.contact-title {
+  font-family: 'Yomogi', cursive;
+  font-size: 1.3rem;
+  color: #a97c5c;
+  margin: 0 0 6px;
+  text-align: center;
+}
+.contact-lead {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #8a7161;
+  text-align: center;
+  margin: 0 0 6px;
+}
+.form-textarea { resize: vertical; font-family: inherit; }
+
 .site-footer {
   text-align: center;
   padding: 24px;
@@ -418,5 +442,8 @@ main {
   .current-month { color: #ecdfd0; }
   .empty-msg { color: #b8a28c; }
   .form-label { color: #cbb8a3; }
+  .contact-section { background: #34291f; border-color: #4a3b2c; }
+  .contact-title { color: #e0b48c; }
+  .contact-lead { color: #cbb8a3; }
   .form-input { background: #2a221c; border-color: #4a3b2c; color: #ecdfd0; }
 }
