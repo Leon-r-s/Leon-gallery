@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>イラストのご依頼｜れおんの原画ギャラリー</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.request-main { max-width: 640px; margin: 0 auto; padding: 0 20px 60px; }
+.req-section { background: #fdf6ee; border: 1px solid #e8d5bf; border-radius: 18px; padding: 22px 22px; margin: 18px 0; }
+.req-section h2 { font-family: 'Yomogi', cursive; font-size: 1.25rem; color: #a97c5c; margin: 0 0 10px; }
+.req-section p, .req-section li { font-size: 0.92rem; line-height: 1.8; color: #5c4a3a; }
+.req-section ul, .req-section ol { padding-left: 1.3em; margin: 6px 0; }
+.price-table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 0.92rem; }
+.price-table th, .price-table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #e8d5bf; color: #5c4a3a; }
+.price-table th { color: #8a7161; font-weight: normal; font-size: 0.82rem; }
+.price-table td.price { text-align: right; white-space: nowrap; }
+.req-lead { text-align: center; font-size: 0.95rem; line-height: 1.8; color: #8a7161; margin: 0 0 8px; }
+.req-buttons { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+.req-buttons .apply-button { text-align: center; display: block; }
+.req-note { font-size: 0.8rem; color: #a98f7c; }
+.sample-main { display: block; width: 100%; max-width: 520px; margin: 4px auto 12px; border-radius: 12px; }
+.sample-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.sample-row img { width: 100%; height: auto; border-radius: 10px; display: block; }
+.back-link { display: block; text-align: center; margin: 24px 0 0; font-size: 0.85rem; color: #a97c5c; }
+@media (prefers-color-scheme: dark) {
+  .req-section { background: #34291f; border-color: #4a3b2c; }
+  .req-section h2 { color: #e0b48c; }
+  .req-section p, .req-section li, .price-table td { color: #ecdfd0; }
+  .price-table th, .req-lead, .req-note { color: #cbb8a3; }
+  .price-table th, .price-table td { border-color: #4a3b2c; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1 class="header-image"><a href="index.html"><img src="assets/header.png" alt="れおんの原画ギャラリー"></a></h1>
+  <p class="subtitle">イラストのご依頼</p>
+</header>
+
+<main class="request-main">
+
+  <p class="req-lead">お手元の画像を一枚送ってください。<br>それを元に、れおんの絵柄で、アイコン用のイラストを描きます。</p>
+
+  <section class="req-section sample-section">
+    <h2>作例</h2>
+    <img class="sample-main" src="assets/sample.png" alt="あなたの画像を、れおんの絵柄でアイコンに。作例3点">
+    <div class="sample-row">
+      <img src="assets/sample1.png" alt="作例1">
+      <img src="assets/sample2.png" alt="作例2">
+      <img src="assets/sample3.png" alt="作例3">
+    </div>
+    <p class="req-note">ご本人の許可をいただいて掲載しています。</p>
+  </section>
+
+  <section class="req-section">
+    <h2>アイコンイラスト</h2>
+    <p>写真でも、今お使いのアイコンでも、お好きな絵でも、AIで作った画像でも大丈夫です。いただいた画像を元に、おまかせで描きます。できあがりは2048×2048の正方形のデジタルイラスト（PNG）。</p>
+    <table class="price-table">
+      <tr><th>内容</th><th></th></tr>
+      <tr><td>基本（背景なし）</td><td class="price">3,000円</td></tr>
+      <tr><td>背景あり</td><td class="price">＋1,000円</td></tr>
+      <tr><td>小物の追加（1つまで）</td><td class="price">＋1,000円</td></tr>
+      <tr><td>例: 背景あり ＋ 小物1つ</td><td class="price">5,000円</td></tr>
+    </table>
+    <p class="req-note">小物2つ以上や、そのほかのご希望は、下のお問い合わせからご相談ください。</p>
+    <div class="req-buttons">
+      <a class="apply-button base-buy-button" id="base-icon-link" href="https://leolabo.base.shop/items/157402689" target="_blank" rel="noopener">BASEで申し込む</a>
+      <a class="apply-button" href="index.html#contact">メールで申し込む・相談する</a>
+    </div>
+    <p class="req-note">BASEはカードなどで先にお支払い。メールの場合は、やり取りのあと、銀行振込かPayPayでお支払いいただきます。</p>
+  </section>
+
+  <section class="req-section">
+    <h2>流れ</h2>
+    <ol>
+      <li>BASEでご購入</li>
+      <li>ご購入後、こちらからメールでご連絡します。そのメールへの返信で、元になる画像と、あればご希望を一言（色・雰囲気など）を送ってください</li>
+      <li>下描きを一度お見せします（修正はこの段階で1回）</li>
+      <li>完成した画像を、メールでお渡しします</li>
+    </ol>
+    <p>納期の目安: 画像をいただいてから2週間ほど。</p>
+  </section>
+
+  <section class="req-section">
+    <h2>使い方について</h2>
+    <ul>
+      <li>SNSのアイコンやプロフィール画像として、ご自由にお使いください</li>
+      <li>ご自身のサムネイル等を作る目的で、画像をAIに読み込ませるのは構いません（学習用データとしての提供や再配布はご遠慮ください）</li>
+      <li>グッズ制作などの商用利用は、別途ご相談ください</li>
+      <li>イラストの著作権は伊咲れおんにあります。作者表記はあってもなくても構いません</li>
+    </ul>
+  </section>
+
+  <section class="req-section">
+    <h2>お受けできないもの</h2>
+    <ul>
+      <li>アニメ・ゲーム・漫画などのキャラクターや、他の作家さんの絵を元にしたものは、基本的にお受けしていません</li>
+      <li>作者ご本人の許可があるもの、公式のガイドラインで二次創作や依頼制作が認められているものは、お問い合わせからご相談ください（確認にお時間をいただきます）</li>
+    </ul>
+    <p>元になる画像は、ご自身の写真や、ご自身で作った画像、ペットの写真など、ご自身のものだと安心です。</p>
+  </section>
+
+  <section class="req-section">
+    <h2>これまでに描いたもの</h2>
+    <ul>
+      <li>SNSアイコン 40枚以上</li>
+      <li>noteのヘッダー（現在はお問い合わせでの受付です）</li>
+      <li>絵本の作画、マスコットのデザイン（進行中）</li>
+    </ul>
+    <p>デジタルの絵は <a href="https://www.instagram.com/neue_r_s/" target="_blank" rel="noopener">Instagram</a> と <a href="https://x.com/Neue_r_s" target="_blank" rel="noopener">X</a> で見られます。<br>毎日一枚、手で絵を描いて900日以上。紙の原画は <a href="index.html">原画ギャラリー</a> に。</p>
+  </section>
+
+  <section class="req-section">
+    <h2>相談したいとき</h2>
+    <p>「これは頼める？」「ヘッダーをお願いしたい」など、決まっていないことは、こちらから。</p>
+    <div class="req-buttons">
+      <a class="apply-button" href="index.html#contact">お問い合わせ</a>
+    </div>
+  </section>
+
+  <a class="back-link" href="index.html">← ギャラリーに戻る</a>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-links">
+    <a href="index.html">ギャラリー</a>
+    <span class="footer-sep">・</span>
+    <a href="https://note.com/leon_s_lab/n/n5be0cb06c1a2" target="_blank" rel="noopener">どんな人？</a>
+    <span class="footer-sep">・</span>
+    <a href="https://lit.link/leonslab" target="_blank" rel="noopener">リンク一覧</a>
+  </p>
+  <p>&copy; れおん｜手描きとAI音楽の研究室</p>
+</footer>
+
+</body>
+</html>
