@@ -795,7 +795,8 @@
       "image": "2026-08-29_えほんとうとうと.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429689"
     },
     {
       "id": "2026-08-30",
@@ -804,7 +805,8 @@
       "image": "2026-08-30_緑の子と.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429690"
     },
     {
       "id": "2026-08-31",
@@ -813,7 +815,8 @@
       "image": "2026-08-31_いのる.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429691"
     },
     {
       "id": "2026-09-01",
@@ -822,7 +825,8 @@
       "image": "2026-09-01_カメミタマ.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429692"
     },
     {
       "id": "2026-09-02",
@@ -831,7 +835,8 @@
       "image": "2026-09-02_ISAQにのるこはく.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429693"
     },
     {
       "id": "2026-09-03",
@@ -840,7 +845,8 @@
       "image": "2026-09-03_紫の花とこはく.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429694"
     },
     {
       "id": "2026-09-04",
@@ -849,7 +855,8 @@
       "image": "2026-09-04_桃の…？.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429695"
     },
     {
       "id": "2026-09-05",
@@ -858,7 +865,8 @@
       "image": "2026-09-05_恐怖の体重計.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429696"
     },
     {
       "id": "2026-09-06",
@@ -867,7 +875,8 @@
       "image": "2026-09-06_スイートポテトうまうま.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429697"
     },
     {
       "id": "2026-09-07",
@@ -876,7 +885,8 @@
       "image": "2026-09-07_ルナとこはくは仲良し.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429698"
     },
     {
       "id": "2026-09-08",
@@ -885,7 +895,8 @@
       "image": "2026-09-08_つつじを見ながら.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429699"
     },
     {
       "id": "2026-09-09",
@@ -894,7 +905,8 @@
       "image": "2026-09-09_つつじウキウキ.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429700"
     },
     {
       "id": "2026-09-10",
@@ -903,7 +915,8 @@
       "image": "2026-09-10_まんまるこはくとつつじ.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429702"
     },
     {
       "id": "2026-09-11",
@@ -912,7 +925,8 @@
       "image": "2026-09-11_ISAQの残.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429703"
     },
     {
       "id": "2026-09-12",
@@ -921,7 +935,8 @@
       "image": "2026-09-12_対照的な二人.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429704"
     },
     {
       "id": "2026-09-13",
@@ -930,7 +945,8 @@
       "image": "2026-09-13_絵が好きだから.jpg",
       "price": 2000,
       "status": "available",
-      "note": ""
+      "note": "",
+      "base_url": "https://leolabo.base.shop/items/157429705"
     }
   ]
 }
